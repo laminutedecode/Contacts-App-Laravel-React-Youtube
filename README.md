@@ -1,66 +1,92 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Contact App - Laravel 12, React, InertiaJS & TailwindCSS
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Cover](https://www.laminutedecode.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhtniyx9j%2Fproduction%2F39a2bab993eb282af6844ef0a002460da0130edf-1280x720.jpg&w=1920&q=75)
 
-## About Laravel
+Apprends à créer une application complète de gestion de contacts en utilisant Laravel 12, React, InertiaJS et TailwindCSS. Dans ce tutoriel, nous allons construire un projet de A à Z, en appliquant les bonnes pratiques pour réaliser une application moderne, performante et bien structurée 🚀🔧.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Au programme
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- ⚙️ Configuration du backend avec Laravel 12 pour gérer les contacts et les bases de données
+- 🔗 Utilisation de React et InertiaJS pour une expérience utilisateur fluide et réactive
+- 🎨 Stylisation avec TailwindCSS pour un design moderne et responsive
+- 🔐 Gestion de l'authentification pour sécuriser l'accès à l'application
+- 🛠️ Implémentation des fonctionnalités comme l'ajout, l'édition et la suppression de contacts
+- 📈 Optimisation des performances et des bonnes pratiques pour garantir une application robuste
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Prérequis
 
-## Learning Laravel
+- PHP 8.2+
+- Composer
+- Node.js et npm
+- Une base de données MySQL ou PostgreSQL
+- Connaissances de base en Laravel et React
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Installation
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. Cloner le dépôt
+```bash
+git clone [url-du-repo]
+cd contact-app
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. Installer les dépendances PHP
+```bash
+composer install
+```
 
-## Laravel Sponsors
+3. Installer les dépendances JavaScript
+```bash
+npm install
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. Copier le fichier d'environnement
+```bash
+cp .env.example .env
+```
 
-### Premium Partners
+5. Générer une clé d'application
+```bash
+php artisan key:generate
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+6. Configurer la base de données dans le fichier `.env`
 
-## Contributing
+7. Exécuter les migrations
+```bash
+php artisan migrate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+8. Lancer le serveur de développement
+```bash
+php artisan serve
+```
 
-## Code of Conduct
+9. Dans un autre terminal, lancer le serveur frontend
+```bash
+npm run dev
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Technologies utilisées
 
-## Security Vulnerabilities
+- **Laravel 12** - Framework PHP pour le backend
+- **React** - Bibliothèque JavaScript pour l'interface utilisateur
+- **InertiaJS** - Pour construire des applications SPA sans API distincte
+- **TailwindCSS** - Framework CSS utilitaire
+- **Breeze** - Kit d'authentification pour Laravel
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Structure du tutoriel
 
-## License
+1. Configuration du projet
+2. Mise en place de l'authentification avec Breeze
+3. Création des modèles et migrations
+4. Développement des contrôleurs et routes
+5. Création des composants React avec InertiaJS
+6. Stylisation de l'interface avec TailwindCSS
+7. Implémentation des fonctionnalités CRUD
+8. Tests et déploiement
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Ce tutoriel est parfait pour les développeurs souhaitant apprendre à combiner Laravel, React et InertiaJS dans un projet complet tout en appliquant les bonnes pratiques de développement web 🔑💡.
+
+## Auteur
+
+[La Minute De Code](https://www.laminutedecode.com/)
